@@ -6,7 +6,7 @@
     
 ``` mermaid
     flowchart TB
-    User((User))--t-->Downloader_Queue
+    User((User))--ti-->Downloader_Queue
    
 
 ```   
