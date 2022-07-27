@@ -24,9 +24,9 @@
         
         uploaded -- No --> Catch_Error
         Catch_Error -- Trigger --> publishReportResult
-        Catch_Error -- Publish --> publishToSentry
+        Catch_Error -- Trigger --> publishToSentry
     end
     
-    publishReportResult -- Publish --> Report_Queue{{Report_Queue}}
+    publishReportResult -- Publish --> Exchange_Route{{Exchange_Route}}
     publishToSentry -- Publish --> Sentry{{Sentry}}
 ```   
