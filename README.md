@@ -6,12 +6,12 @@
     
 ```mermaid
     flowchart TB
-    User((User)) -- Publish --> Downloader_Queue
-    Downloader_Queue{{Downloader_Queue}} -- Trigger --> downloadTransaction\nReport
+    User -- Publish --> Downloader_Queue
+    Downloader_Queue -- Trigger --> downloadTransaction\nReport
   
     
-    publishReportResult -- Publish --> Report_Queue{{Report_Queue}}
-    publishToSentry -- Publish --> Sentry{{Sentry}}
+    publishReportResult -- Publish --> Report_Queue
+    publishToSentry -- Publish --> Sentry
 
 ```
 
