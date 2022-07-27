@@ -4,7 +4,7 @@
 <details>
     <summary>Download Report</summary>
     
-```mermaid
+``` mermaid
     flowchart TB
     User((User)) -- Publish --> Downloader_Queue
     Downloader_Queue{{Downloader_Queue}} -- Trigger --> downloadTransaction\nReport
