@@ -1,7 +1,14 @@
 # mermaind-playground
 
-```mermaid
-flowchart LR
-     Start --> Stop
 
-```
+<details>
+    <summary>Download Report</summary>
+    
+    ```mermaid
+    flowchart LR
+        Start --> Stop
+
+    ```
+
+</details>
+
