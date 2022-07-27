@@ -9,11 +9,11 @@
 ``` mermaid
     graph TB
     User((User)) -- Publish --> Downloader_Queue
-    Downloader_Queue{{Downloader_Queue}} -- Trigger --> downloadTransaction\nReport
+    Downloader_Queue{{Downloader_Queue}} -- Trigger --> downloadTransactionReport
     
     subgraph BPI_Controller[" "]
         direction TB
-        downloadTransaction\nReport --> |crawl| BPI_WEBSITE
+        downloadTransactionReport --> |crawl| BPI_WEBSITE{{BPI_WEBSITE}}
         BPI_WEBSITE --> crawling{isSuccess?}
         
         crawling -- Yes --> formatToZipAndUploadToS3
