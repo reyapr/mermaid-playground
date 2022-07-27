@@ -4,11 +4,6 @@
 <details>
     <summary>Download Report</summary>
     
-
-
-</details>
-
-
 ```mermaid
     flowchart TB
     User((User)) -- Publish --> Downloader_Queue
@@ -34,3 +29,7 @@
     publishToSentry -- Publish --> Sentry{{Sentry}}
 
 ```
+
+</details>
+
+
