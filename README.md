@@ -6,7 +6,7 @@
     
 ```mermaid
     flowchart TB
-    User --> Downloader_Queue
+    User --> |Publish| Downloader_Queue
 
 ```
 
